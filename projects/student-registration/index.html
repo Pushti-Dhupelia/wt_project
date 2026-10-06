@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Portal | Indus University | Pushti.dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar with Return Navigation -->
+  <header class="top-nav">
+    <div class="top-nav-container">
+      <a href="../../index.html#projects" class="btn-back">
+        <i class="bi bi-arrow-left"></i>
+        <span>Back to Portfolio</span>
+      </a>
+      <div class="nav-title-group">
+        <span>Student Registration Portal</span>
+        <span class="nav-badge">Live Application</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <div class="portal-header">
+      <h1 class="portal-title">Indus University Enrollment</h1>
+      <p class="portal-subtitle">Complete student onboarding form with real-time validation and dynamic digital ID preview</p>
+    </div>
+
+    <div class="registration-grid">
+      
+      <!-- Left Column: Form -->
+      <section class="form-card">
+        <h2 class="form-section-title">
+          <i class="bi bi-pencil-square" style="color: var(--primary);"></i>
+          <span>Student Registration Form</span>
+        </h2>
+
+        <form id="studentForm" novalidate>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name <span style="color: #ef4444;">*</span></label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Pushti Dhupelia" required>
+              <div class="error-text">Please enter a valid full name (letters and spaces only, min 2 chars).</div>
+            </div>
+
+            <div class="form-group">
+              <label for="enrollmentNo" class="form-label">Enrollment Number <span style="color: #ef4444;">*</span></label>
+              <input type="text" id="enrollmentNo" class="form-control" placeholder="e.g. IU24CSE102" required>
+              <div class="error-text">Please enter a valid enrollment number (alphanumeric, min 6 chars).</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address <span style="color: #ef4444;">*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="e.g. student@indusuni.ac.in" required>
+              <div class="error-text">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Contact Number <span style="color: #ef4444;">*</span></label>
+              <input type="tel" id="phone" class="form-control" placeholder="e.g. 9876543210" required>
+              <div class="error-text">Please enter a 10-digit mobile number.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="branch" class="form-label">Academic Branch <span style="color: #ef4444;">*</span></label>
+              <select id="branch" class="form-control" required>
+                <option value="Computer Science & Engineering" selected>Computer Science &amp; Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="AI & Machine Learning">AI &amp; Machine Learning</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Electronics & Communication">Electronics &amp; Communication</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="semester" class="form-label">Current Semester <span style="color: #ef4444;">*</span></label>
+              <select id="semester" class="form-control" required>
+                <option value="Semester 1">Semester 1</option>
+                <option value="Semester 2">Semester 2</option>
+                <option value="Semester 3">Semester 3</option>
+                <option value="Semester 4" selected>Semester 4</option>
+                <option value="Semester 5">Semester 5</option>
+                <option value="Semester 6">Semester 6</option>
+                <option value="Semester 7">Semester 7</option>
+                <option value="Semester 8">Semester 8</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gender" class="form-label">Gender <span style="color: #ef4444;">*</span></label>
+              <select id="gender" class="form-control" required>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="dob" class="form-label">Date of Birth <span style="color: #ef4444;">*</span></label>
+              <input type="date" id="dob" class="form-control" required value="2005-08-15">
+              <div class="error-text">Please select a valid date of birth.</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="form-label">Address / City <span style="color: #ef4444;">*</span></label>
+            <input type="text" id="address" class="form-control" placeholder="e.g. Ahmedabad, Gujarat" required value="Ahmedabad, Gujarat">
+            <div class="error-text">Please enter an address or city.</div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary" id="registerBtn">
+              <i class="bi bi-check2-circle"></i>
+              <span>Register Student</span>
+            </button>
+            <button type="reset" class="btn-secondary" id="resetBtn">
+              <i class="bi bi-arrow-counterclockwise"></i>
+              <span>Reset Form</span>
+            </button>
+          </div>
+
+        </form>
+      </section>
+
+      <!-- Right Column: Interactive Digital ID Preview -->
+      <aside class="id-preview-panel">
+        <h2 class="preview-title">
+          <i class="bi bi-person-vcard-fill" style="color: var(--primary);"></i>
+          <span>Live Student ID Preview</span>
+        </h2>
+
+        <div class="id-card">
+          <div class="id-card-decor"></div>
+          
+          <div class="id-card-header">
+            <span class="id-uni-name">Indus University</span>
+            <span class="id-badge">Active Student</span>
+          </div>
+
+          <div class="id-body">
+            <div class="id-avatar">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="id-details">
+              <span class="id-student-name" id="previewName">Pushti Dhupelia</span>
+              <span class="id-student-enroll" id="previewEnroll">IU24CSE102</span>
+            </div>
+          </div>
+
+          <div class="id-meta-grid">
+            <div class="id-meta-item">
+              <span class="id-meta-label">Branch</span>
+              <span class="id-meta-val" id="previewBranch">CSE</span>
+            </div>
+            <div class="id-meta-item">
+              <span class="id-meta-label">Semester</span>
+              <span class="id-meta-val" id="previewSem">Sem 4</span>
+            </div>
+            <div class="id-meta-item">
+              <span class="id-meta-label">Contact</span>
+              <span class="id-meta-val" id="previewPhone">9876543210</span>
+            </div>
+            <div class="id-meta-item">
+              <span class="id-meta-label">City</span>
+              <span class="id-meta-val" id="previewCity">Ahmedabad</span>
+            </div>
+          </div>
+
+          <div class="id-footer-barcode">
+            <span class="barcode-strip">||| | |||| | ||| |||| |</span>
+            <span style="font-size: 0.75rem; color: #94a3b8; font-family: monospace;">2024–2028</span>
+          </div>
+        </div>
+
+        <div style="background-color: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; font-size: 0.8125rem; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 10px;">
+          <i class="bi bi-info-circle-fill" style="color: var(--primary); font-size: 1rem; margin-top: 2px;"></i>
+          <span>This ID card auto-updates in real-time as you type your name, enrollment number, branch, and contact details.</span>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- Enrolled Students Records Table -->
+    <section class="records-card">
+      <div class="records-header">
+        <div>
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">Registered Students Roster</h2>
+          <p style="font-size: 0.875rem; color: var(--text-secondary);">Local records stored dynamically in browser memory</p>
+        </div>
+        <button type="button" class="btn-secondary" id="clearAllBtn" style="font-size: 0.8125rem; padding: 6px 14px;">
+          <i class="bi bi-trash"></i>
+          <span>Clear All Records</span>
+        </button>
+      </div>
+
+      <div class="table-responsive">
+        <table class="records-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Enrollment No</th>
+              <th>Branch</th>
+              <th>Semester</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="recordsTableBody">
+            <!-- Populated via script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

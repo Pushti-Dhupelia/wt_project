@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Pushti Dhupelia | B.Tech CSE Student &amp; Software Developer | Pushti.dev</title>
+  <meta name="description" content="Personal developer portfolio of Pushti Dhupelia, B.Tech Computer Science student at Indus University and aspiring Software &amp; Web Developer based in Ahmedabad, India.">
+  <meta name="keywords" content="Pushti Dhupelia, Computer Science Student, Indus University, Software Developer, Python, Java, C++, Flutter, DevOps, Git, Web Developer Ahmedabad">
+  <meta name="author" content="Pushti Dhupelia">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pushti Dhupelia | B.Tech CSE Student &amp; Software Developer">
+  <meta property="og:description" content="Passionate Computer Science student building practical software applications, learning new technologies, and crafting clean digital experiences.">
+  <meta property="og:url" content="https://pushti-dhupelia.github.io/portfolio/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Sticky Navigation Bar
+       ======================================================================== -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a href="#home" class="nav-brand" aria-label="Pushti.dev Home">
+          <span class="brand-icon">&lt;/&gt;</span>
+          <span class="brand-text">Pushti<span class="brand-dot">.dev</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links & Resume Action -->
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-cta">
+            <button type="button" class="btn btn-outline-primary btn-sm btn-resume-trigger" id="navResumeBtn">
+              <i class="bi bi-file-earmark-person"></i>
+              <span>Resume</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. Hero Section
+         ====================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow-1"></div>
+      <div class="hero-bg-glow-2"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Introduction & Call-To-Actions -->
+          <div class="hero-content">
+            
+            <!-- Availability Status Pill -->
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>Available for internships &amp; project collaborations</span>
+            </div>
+
+            <!-- Greeting & Name -->
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+              <span class="highlight">Pushti Dhupelia</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <h2 class="hero-subtitle">B.Tech CSE Student &amp; Software Developer</h2>
+
+            <!-- Short Description -->
+            <p class="hero-description">
+              Passionate Computer Science student who enjoys building practical applications, learning new technologies and creating clean, user-friendly digital experiences.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="heroViewProjectsBtn">
+                <span>View My Projects</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+                <i class="bi bi-chat-dots"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Technology Highlights -->
+            <div class="hero-tech-highlights">
+              <span class="tech-label">Core Technologies</span>
+              <div class="tech-badges-list">
+                <span class="hero-tech-badge"><i class="bi bi-filetype-py"></i> Python</span>
+                <span class="hero-tech-badge"><i class="bi bi-cup-hot"></i> Java</span>
+                <span class="hero-tech-badge"><i class="bi bi-code-slash"></i> C++</span>
+                <span class="hero-tech-badge"><i class="bi bi-phone"></i> Flutter</span>
+                <span class="hero-tech-badge"><i class="bi bi-diagram-3"></i> DevOps</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Profile Image & Floating Elements -->
+          <div class="hero-visual">
+            <div class="avatar-wrapper">
+              <div class="avatar-halo"></div>
+              <div class="avatar-container">
+                <img src="assets/images/pushti_avatar.jpg" alt="Pushti Dhupelia - Software Developer" class="avatar-image" loading="eager" width="320" height="320">
+              </div>
+
+              <!-- Floating Element 1: Code Brackets -->
+              <div class="floating-element float-code" aria-hidden="true">
+                <i class="bi bi-code-square"></i>
+                <span>&lt;code /&gt;</span>
+              </div>
+
+              <!-- Floating Element 2: Flutter -->
+              <div class="floating-element float-flutter" aria-hidden="true">
+                <i class="bi bi-phone"></i>
+                <span>Flutter</span>
+              </div>
+
+              <!-- Floating Element 3: Git -->
+              <div class="floating-element float-git" aria-hidden="true">
+                <i class="bi bi-git"></i>
+                <span>Git v2.4</span>
+              </div>
+
+              <!-- Floating Element 4: Terminal -->
+              <div class="floating-element float-terminal" aria-hidden="true">
+                <i class="bi bi-terminal"></i>
+                <span>&gt;_ devops</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. About Me Section
+         ====================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <i class="bi bi-person-badge"></i>
+            <span>Get To Know Me</span>
+          </div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">
+            A glimpse into my academic journey, passion for programming, and key focus areas as a computer science undergraduate.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left: Narrative & Highlight Cards -->
+          <div class="about-intro-card reveal-on-scroll">
+            <p class="about-intro-text">
+              I am an enthusiastic Computer Science student with a passion for programming, software development and modern application development. I enjoy learning new technologies, solving programming problems and turning ideas into practical digital solutions.
+            </p>
+
+            <!-- 4 Information Cards -->
+            <div class="about-highlights-grid">
+              
+              <div class="highlight-card">
+                <div class="icon-box">🎓</div>
+                <div class="text-content">Computer Science Student</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="icon-box">💻</div>
+                <div class="text-content">Software Developer</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="icon-box">📱</div>
+                <div class="text-content">Flutter Developer</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="icon-box">🚀</div>
+                <div class="text-content">Technology Enthusiast</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Education Card -->
+          <div class="education-card reveal-on-scroll">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">B.Tech in Computer Science</h3>
+                <div class="edu-institution">
+                  <i class="bi bi-mortarboard-fill"></i>
+                  <span>Indus University</span>
+                </div>
+              </div>
+              <span class="edu-badge">2024 – 2028</span>
+            </div>
+
+            <h4 class="edu-focus-title">Focus Areas:</h4>
+            
+            <div class="edu-focus-list">
+              <span class="edu-focus-item"><i class="bi bi-check2"></i> Data Structures &amp; Algorithms</span>
+              <span class="edu-focus-item"><i class="bi bi-check2"></i> Programming</span>
+              <span class="edu-focus-item"><i class="bi bi-check2"></i> Web Development</span>
+              <span class="edu-focus-item"><i class="bi bi-check2"></i> Software Development</span>
+              <span class="edu-focus-item"><i class="bi bi-check2"></i> Flutter Development</span>
+              <span class="edu-focus-item"><i class="bi bi-check2"></i> DevOps</span>
+            </div>
+
+            <div class="edu-meta-row">
+              <div class="edu-meta-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Ahmedabad, Gujarat, India</span>
+              </div>
+              <div class="edu-meta-item">
+                <i class="bi bi-calendar-check"></i>
+                <span>Currently Enrolled</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. Skills Section
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <i class="bi bi-cpu"></i>
+            <span>Technical Proficiencies</span>
+          </div>
+          <h2 class="section-title">My Technical Skills</h2>
+          <p class="section-description">
+            A transparent overview of programming languages, development frameworks, and tools I use to build robust software.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="skills-controls reveal-on-scroll">
+          <button type="button" class="filter-tab active" data-filter="all">All Skills</button>
+          <button type="button" class="filter-tab" data-filter="programming">Programming</button>
+          <button type="button" class="filter-tab" data-filter="development">Development</button>
+          <button type="button" class="filter-tab" data-filter="tools">Tools &amp; Technologies</button>
+        </div>
+
+        <!-- Skills Grid (7 Core Skills) -->
+        <div class="skills-grid">
+          
+          <!-- 1. Python -->
+          <div class="skill-card reveal-on-scroll" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-python">
+                <i class="bi bi-filetype-py"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-category-label">Programming</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Core Programming</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Problem Solving</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Application Development</span></li>
+            </ul>
+          </div>
+
+          <!-- 2. Java -->
+          <div class="skill-card reveal-on-scroll" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-java">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-category-label">Programming</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Object-Oriented Programming</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Application Development</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Class Design &amp; Architecture</span></li>
+            </ul>
+          </div>
+
+          <!-- 3. C++ -->
+          <div class="skill-card reveal-on-scroll" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-cpp">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">C++</h3>
+                <span class="skill-category-label">Programming</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Data Structures</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Algorithms Analysis</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Competitive Programming fundamentals</span></li>
+            </ul>
+          </div>
+
+          <!-- 4. Flutter -->
+          <div class="skill-card reveal-on-scroll" data-category="development">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-flutter">
+                <i class="bi bi-phone"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">Flutter</h3>
+                <span class="skill-category-label">Development</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Cross-platform application development</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>UI &amp; Widget development</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Flutter / Dart ecosystem</span></li>
+            </ul>
+          </div>
+
+          <!-- 5. DevOps -->
+          <div class="skill-card reveal-on-scroll" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-devops">
+                <i class="bi bi-diagram-3-fill"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">DevOps</h3>
+                <span class="skill-category-label">Tools &amp; Technologies</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Development &amp; deployment concepts</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>CI/CD fundamentals</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Modern development workflow</span></li>
+            </ul>
+          </div>
+
+          <!-- 6. Git -->
+          <div class="skill-card reveal-on-scroll" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-git">
+                <i class="bi bi-git"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">Git</h3>
+                <span class="skill-category-label">Tools &amp; Technologies</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Version control fundamentals</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Branching &amp; merge strategies</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Local repository management</span></li>
+            </ul>
+          </div>
+
+          <!-- 7. GitHub -->
+          <div class="skill-card reveal-on-scroll" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-github">
+                <i class="bi bi-github"></i>
+              </div>
+              <div class="skill-title-group">
+                <h3 class="skill-name">GitHub</h3>
+                <span class="skill-category-label">Tools &amp; Technologies</span>
+              </div>
+            </div>
+            <ul class="skill-points">
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Cloud code hosting</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Project collaboration &amp; Pull Requests</span></li>
+              <li class="skill-point"><i class="bi bi-check-circle-fill"></i> <span>Remote repository management &amp; Pages</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Projects Section
+         ====================================================================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <i class="bi bi-folder2-open"></i>
+            <span>Featured Portfolio Work</span>
+          </div>
+          <h2 class="section-title">Projects Showcase</h2>
+          <p class="section-description">
+            A collection of practical applications, frontend interfaces, and development workflow implementations.
+          </p>
+        </div>
+
+        <!-- Projects Grid (3 Easy Projects) -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Student Registration Form -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-thumb">
+              <a href="projects/student-registration/index.html" target="_blank" rel="noopener noreferrer" title="Open Student Registration Form">
+                <img src="assets/images/project-student-reg.svg" alt="Student Registration Form Preview" loading="lazy" width="600" height="360">
+              </a>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag tech-tag-sky">HTML</span>
+                <span class="tech-tag tech-tag-sky">CSS</span>
+                <span class="tech-tag tech-tag-sky">JavaScript</span>
+              </div>
+              <h3 class="project-title">Student Registration Form</h3>
+              <p class="project-description">
+                A responsive student registration form designed to collect and validate student information with a real-time digital ID card preview.
+              </p>
+              <div class="project-footer">
+                <a href="projects/student-registration/index.html" class="btn-view-project" target="_blank" rel="noopener noreferrer" title="Open Live Student Registration Portal">
+                  <span>View Project</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="projects/student-registration/index.html" target="_blank" rel="noopener noreferrer" class="btn-github-icon" aria-label="Open Student Registration Form" title="Open Project in New Tab">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Calculator App -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-thumb">
+              <a href="projects/calculator/index.html" target="_blank" rel="noopener noreferrer" title="Open Calculator App">
+                <img src="assets/images/project-calculator.svg" alt="Calculator App Preview" loading="lazy" width="600" height="360">
+              </a>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag tech-tag-indigo">JavaScript</span>
+                <span class="tech-tag tech-tag-indigo">Calculator UI</span>
+              </div>
+              <h3 class="project-title">Calculator App</h3>
+              <p class="project-description">
+                A simple and clean calculator application developed with an interactive user interface, arithmetic operations, and calculation history.
+              </p>
+              <div class="project-footer">
+                <a href="projects/calculator/index.html" class="btn-view-project" target="_blank" rel="noopener noreferrer" title="Open Live Calculator App">
+                  <span>View Project</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="projects/calculator/index.html" target="_blank" rel="noopener noreferrer" class="btn-github-icon" aria-label="Open Calculator App" title="Open Project in New Tab">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: To-Do Application -->
+          <article class="project-card reveal-on-scroll">
+            <div class="project-thumb">
+              <a href="projects/todo-app/index.html" target="_blank" rel="noopener noreferrer" title="Open To-Do Application">
+                <img src="assets/images/project-todo.svg" alt="To-Do Application Preview" loading="lazy" width="600" height="360">
+              </a>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag tech-tag-sky">HTML</span>
+                <span class="tech-tag tech-tag-sky">CSS</span>
+                <span class="tech-tag tech-tag-sky">JavaScript</span>
+              </div>
+              <h3 class="project-title">To-Do Application</h3>
+              <p class="project-description">
+                A simple task management application that allows users to create, filter, complete and delete daily tasks with local storage persistence.
+              </p>
+              <div class="project-footer">
+                <a href="projects/todo-app/index.html" class="btn-view-project" target="_blank" rel="noopener noreferrer" title="Open Live To-Do Application">
+                  <span>View Project</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="projects/todo-app/index.html" target="_blank" rel="noopener noreferrer" class="btn-github-icon" aria-label="Open To-Do Application" title="Open Project in New Tab">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Contact Section
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <i class="bi bi-envelope"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-description">
+            Have a project idea, collaboration opportunity or just want to connect? I'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <p class="contact-info-text">
+              Feel free to reach out via email or connect with me on GitHub and LinkedIn. I am always open to discussing new software ideas, developer opportunities, and student collaborations.
+            </p>
+
+            <div class="contact-cards-list">
+              
+              <!-- Email Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-envelope-at"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Email Address</span>
+                  <a href="mailto:pushtidhupelia@gmail.com" class="contact-value" title="Send direct email">pushtidhupelia@gmail.com</a>
+                </div>
+                <button type="button" class="btn-copy-email" id="copyEmailBtn" title="Copy email address to clipboard">
+                  <i class="bi bi-clipboard"></i>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Ahmedabad, India</span>
+                </div>
+              </div>
+
+              <!-- GitHub Profile Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">GitHub Profile</span>
+                  <a href="https://github.com/Pushti-Dhupelia" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/Pushti-Dhupelia</a>
+                </div>
+              </div>
+
+              <!-- LinkedIn Profile Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/pushti-dhupelia" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/pushti-dhupelia</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-card reveal-on-scroll">
+            <form id="contactForm" novalidate>
+              
+              <!-- Full Name Field with Robust Validation -->
+              <div class="form-group">
+                <label for="nameInput" class="form-label">Full Name <span style="color: #ef4444;">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="nameInput" name="name" class="form-input" placeholder="e.g. Pushti Dhupelia" required autocomplete="name" aria-describedby="nameError">
+                  <span class="input-status-icon" id="nameStatusIcon" aria-hidden="true"></span>
+                </div>
+                <div class="form-error" id="nameError" role="alert">Please enter your full name (letters only, min 2 characters).</div>
+                <div class="form-valid-feedback" id="nameValidFeedback"><i class="bi bi-check-circle-fill"></i> Looks good!</div>
+              </div>
+
+              <!-- Email Field with Robust Validation -->
+              <div class="form-group">
+                <label for="emailInput" class="form-label">Email Address <span style="color: #ef4444;">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="emailInput" name="email" class="form-input" placeholder="e.g. pushti@example.com" required autocomplete="email" aria-describedby="emailError">
+                  <span class="input-status-icon" id="emailStatusIcon" aria-hidden="true"></span>
+                </div>
+                <div class="form-error" id="emailError" role="alert">Please enter a valid email address (e.g. name@domain.com).</div>
+                <div class="form-valid-feedback" id="emailValidFeedback"><i class="bi bi-check-circle-fill"></i> Valid email format!</div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="messageInput" class="form-label">Message <span style="color: #ef4444;">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="messageInput" name="message" class="form-textarea" placeholder="Write your message or project inquiry here..." rows="5" required aria-describedby="messageError"></textarea>
+                </div>
+                <div class="form-error" id="messageError" role="alert">Please enter a message (minimum 5 characters).</div>
+                <div class="form-valid-feedback" id="messageValidFeedback"><i class="bi bi-check-circle-fill"></i> Message looks great!</div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" id="sendMessageBtn" style="width: 100%;">
+                <i class="bi bi-send-fill"></i>
+                <span>Send Message</span>
+              </button>
+
+              <!-- Feedback Banner for Static GitHub Pages -->
+              <div class="form-status-banner" id="formStatusBanner" role="alert"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       7. Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <a href="#home" class="footer-brand" aria-label="Pushti.dev Home">
+          <span class="brand-icon">&lt;/&gt;</span>
+          <span class="brand-text">Pushti<span class="brand-dot">.dev</span></span>
+        </a>
+
+        <!-- Social Links (Only actual links) -->
+        <div class="footer-social-links">
+          <a href="https://github.com/Pushti-Dhupelia" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Pushti's GitHub Profile" title="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/pushti-dhupelia" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Pushti's LinkedIn Profile" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="mailto:pushtidhupelia@gmail.com" class="footer-social-btn" aria-label="Send direct email to Pushti" title="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Pushti Dhupelia. All Rights Reserved.</p>
+        <p>Built with clean HTML5, CSS3 &amp; JavaScript • Hosted on GitHub Pages</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       8. Modal: Resume Preview
+       ======================================================================== -->
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="resumeModalTitle">Pushti Dhupelia - Resume Preview</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close dialog">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-preview">
+          
+          <div class="resume-header">
+            <h2 class="resume-name">Pushti Dhupelia</h2>
+            <p class="resume-subtitle">B.Tech Computer Science Student &amp; Aspiring Software Developer</p>
+            <div class="resume-contact-row">
+              <span><i class="bi bi-envelope"></i> pushtidhupelia@gmail.com</span>
+              <span><i class="bi bi-geo-alt"></i> Ahmedabad, India</span>
+              <span><i class="bi bi-github"></i> github.com/Pushti-Dhupelia</span>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h4 class="resume-section-title">Education</h4>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span>B.Tech in Computer Science</span>
+                <span>2024 – 2028</span>
+              </div>
+              <div class="resume-item-sub">Indus University, Ahmedabad</div>
+              <p class="resume-item-desc">
+                Focus Areas: Data Structures &amp; Algorithms, Object-Oriented Programming, Web Development, Software Engineering, Flutter Application Development, and DevOps.
+              </p>
+            </div>
+          </div>
+
+          <!-- Technical Proficiencies -->
+          <div>
+            <h4 class="resume-section-title">Technical Proficiencies</h4>
+            <p class="resume-item-desc" style="margin-bottom: 6px;">
+              <strong>Programming Languages:</strong> Python, Java, C++, Dart, JavaScript
+            </p>
+            <p class="resume-item-desc" style="margin-bottom: 6px;">
+              <strong>Development &amp; Frameworks:</strong> Flutter, HTML5, CSS3, Responsive Web Design
+            </p>
+            <p class="resume-item-desc">
+              <strong>Tools &amp; Workflows:</strong> Git, GitHub, DevOps concepts, CI/CD pipelines, VS Code
+            </p>
+          </div>
+
+          <!-- Highlighted Projects -->
+          <div>
+            <h4 class="resume-section-title">Key Projects</h4>
+            
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span>Student Registration Form</span>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+              <p class="resume-item-desc">
+                Created a responsive client-side validated registration form with real-time feedback and semantic accessible markup.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span>Calculator App</span>
+                <span>Flutter, Dart</span>
+              </div>
+              <p class="resume-item-desc">
+                Built an interactive arithmetic calculator supporting responsive mobile grids and real-time expression parsing.
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span>To-Do Application</span>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+              <p class="resume-item-desc">
+                Developed a clean task management application that allows users to create, complete and delete daily tasks with local storage persistence.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary btn-sm" id="printResumeBtn">
+          <i class="bi bi-printer"></i>
+          <span>Print / Save PDF</span>
+        </button>
+        <button type="button" class="btn btn-secondary btn-sm modal-close-btn">
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       9. Floating Back to Top Button
+       ======================================================================== -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Calculator App | Pushti.dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar with Return Navigation -->
+  <header class="top-nav">
+    <div class="top-nav-container">
+      <a href="../../index.html#projects" class="btn-back">
+        <i class="bi bi-arrow-left"></i>
+        <span>Back to Portfolio</span>
+      </a>
+      <div class="nav-title-group">
+        <span>Interactive Calculator</span>
+        <span class="nav-badge">Live Application</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="calc-wrapper">
+    
+    <!-- Calculator Machine -->
+    <div class="calculator">
+      
+      <!-- Screen Display -->
+      <div class="calc-screen">
+        <div class="history-expr" id="historyExpr">&nbsp;</div>
+        <div class="current-value" id="currentVal">0</div>
+      </div>
+
+      <!-- Keypad -->
+      <div class="keypad">
+        <!-- Row 1: Clear & Functions -->
+        <button type="button" class="btn-calc btn-action btn-clear" data-action="all-clear">AC</button>
+        <button type="button" class="btn-calc btn-action" data-action="backspace">⌫</button>
+        <button type="button" class="btn-calc btn-action" data-action="percent">%</button>
+        <button type="button" class="btn-calc btn-op" data-op="÷">÷</button>
+
+        <!-- Row 2 -->
+        <button type="button" class="btn-calc btn-action" data-action="sqrt">√</button>
+        <button type="button" class="btn-calc btn-action" data-action="square">x²</button>
+        <button type="button" class="btn-calc btn-action" data-action="reciprocal">1/x</button>
+        <button type="button" class="btn-calc btn-op" data-op="×">×</button>
+
+        <!-- Row 3: 7, 8, 9, - -->
+        <button type="button" class="btn-calc btn-num" data-num="7">7</button>
+        <button type="button" class="btn-calc btn-num" data-num="8">8</button>
+        <button type="button" class="btn-calc btn-num" data-num="9">9</button>
+        <button type="button" class="btn-calc btn-op" data-op="-">−</button>
+
+        <!-- Row 4: 4, 5, 6, + -->
+        <button type="button" class="btn-calc btn-num" data-num="4">4</button>
+        <button type="button" class="btn-calc btn-num" data-num="5">5</button>
+        <button type="button" class="btn-calc btn-num" data-num="6">6</button>
+        <button type="button" class="btn-calc btn-op" data-op="+">+</button>
+
+        <!-- Row 5: 1, 2, 3 -->
+        <button type="button" class="btn-calc btn-num" data-num="1">1</button>
+        <button type="button" class="btn-calc btn-num" data-num="2">2</button>
+        <button type="button" class="btn-calc btn-num" data-num="3">3</button>
+        <button type="button" class="btn-calc btn-action" data-action="negate">±</button>
+
+        <!-- Row 6: 0, ., = -->
+        <button type="button" class="btn-calc btn-num btn-span-2" data-num="0">0</button>
+        <button type="button" class="btn-calc btn-num" data-action="decimal">.</button>
+        <button type="button" class="btn-calc btn-equals" data-action="calculate">=</button>
+      </div>
+
+    </div>
+
+    <!-- Sidebar: Calculation History & Keyboard Shortcuts -->
+    <aside class="calc-sidebar">
+      
+      <!-- History Card -->
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <h2 class="sidebar-title">
+            <i class="bi bi-clock-history" style="color: var(--primary);"></i>
+            <span>Calculation History</span>
+          </h2>
+          <button type="button" class="btn-clear-history" id="clearHistoryBtn">Clear</button>
+        </div>
+
+        <div class="history-list" id="historyList">
+          <div class="empty-history">No calculations performed yet. Try evaluating an expression!</div>
+        </div>
+      </div>
+
+      <!-- Shortcuts Card -->
+      <div class="sidebar-card">
+        <h3 style="font-size: 0.9375rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <i class="bi bi-keyboard-fill" style="color: var(--primary);"></i>
+          <span>Keyboard Shortcuts</span>
+        </h3>
+        <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.8125rem; color: #475569;">
+          <li style="display: flex; justify-content: space-between;">
+            <span>Digits &amp; Operators:</span>
+            <span><span class="kbd-tag">0-9</span> <span class="kbd-tag">+</span> <span class="kbd-tag">-</span> <span class="kbd-tag">*</span> <span class="kbd-tag">/</span></span>
+          </li>
+          <li style="display: flex; justify-content: space-between;">
+            <span>Calculate:</span>
+            <span><span class="kbd-tag">Enter</span> or <span class="kbd-tag">=</span></span>
+          </li>
+          <li style="display: flex; justify-content: space-between;">
+            <span>Clear / Backspace:</span>
+            <span><span class="kbd-tag">Esc</span> (Clear) <span class="kbd-tag">Backspace</span></span>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

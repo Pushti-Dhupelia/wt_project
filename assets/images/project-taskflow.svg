@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e24" />
+      <stop offset="100%" stop-color="#2a2238" />
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#8b5cf6" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bgGrad5)" />
+
+  <g filter="url(#shadow5)">
+    <rect x="40" y="35" width="520" height="290" rx="12" fill="#13111c" stroke="#2e2b3d" stroke-width="1.5" />
+    
+    <!-- Header -->
+    <rect x="40" y="35" width="520" height="42" rx="12" fill="#1b1827" />
+    <circle cx="65" cy="56" r="5" fill="#f43f5e" />
+    <circle cx="81" cy="56" r="5" fill="#fbbf24" />
+    <circle cx="97" cy="56" r="5" fill="#10b981" />
+    <text x="130" y="61" fill="#c084fc" font-family="'Segoe UI', sans-serif" font-weight="bold" font-size="13">📋 TaskFlow • Agile Kanban Board</text>
+    
+    <!-- Column 1: To Do -->
+    <rect x="55" y="90" width="150" height="220" rx="8" fill="#191624" />
+    <text x="70" y="112" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-weight="bold" font-size="12">TO DO (3)</text>
+    <rect x="65" y="125" width="130" height="70" rx="6" fill="#242033" stroke="#36314d" />
+    <text x="75" y="145" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="11.5">Design System Audit</text>
+    <rect x="75" y="157" width="50" height="16" rx="8" fill="#f43f5e" fill-opacity="0.2" />
+    <text x="100" y="169" fill="#f43f5e" font-family="'Segoe UI', sans-serif" font-size="9" text-anchor="middle">High</text>
+    <text x="175" y="183" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="10">2d left</text>
+
+    <!-- Column 2: In Progress -->
+    <rect x="225" y="90" width="150" height="220" rx="8" fill="#191624" />
+    <text x="240" y="112" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-weight="bold" font-size="12">IN PROGRESS (2)</text>
+    <rect x="235" y="125" width="130" height="85" rx="6" fill="#242033" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="245" y="145" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="11.5">Responsive Layout</text>
+    <text x="245" y="162" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Bootstrap 5 grid testing</text>
+    <rect x="245" y="172" width="60" height="16" rx="8" fill="#38bdf8" fill-opacity="0.2" />
+    <text x="275" y="184" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="9" text-anchor="middle">In Review</text>
+
+    <!-- Column 3: Completed -->
+    <rect x="395" y="90" width="150" height="220" rx="8" fill="#191624" />
+    <text x="410" y="112" fill="#34d399" font-family="'Segoe UI', sans-serif" font-weight="bold" font-size="12">COMPLETED (5)</text>
+    <rect x="405" y="125" width="130" height="70" rx="6" fill="#242033" stroke="#10b981" />
+    <text x="415" y="145" fill="#f1f5f9" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="11.5">Dark Mode Toggle</text>
+    <rect x="415" y="157" width="55" height="16" rx="8" fill="#10b981" fill-opacity="0.2" />
+    <text x="442" y="169" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="9" text-anchor="middle">✓ Done</text>
+  </g>
+</svg>
